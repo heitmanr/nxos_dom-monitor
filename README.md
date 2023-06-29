@@ -16,6 +16,13 @@ It requires two components:
 
 ## installation
 (1) copy the python-script to the local bootdisk: into the /scripts/-Directory
-(2) add the EEM-Commands to the running-config
-
-the Applet should run 1x immedeately and after 24h again and then every day
+## test
+run the script manually
+(2) cd scripts
+(3) source nxos_dom.py
+Expected result:
+* list of interfaces with any transceiver warnings/alarms to be printed to the console
+## automate
+(2) add the EEM-Commands found in "nxos_dom-eem.cfg" to the running-config
+The Applet should run 1x immedeately and after 24h again and then every day.
+* check "show logging logfile" or remote syslog-log

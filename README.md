@@ -18,4 +18,4 @@ It requires two components:
 (1) copy the python-script to the local bootdisk:
 (2) add the EEM-Commands to the running-config
 
-the Applet should run 1x immedeately and after 24h again and than every day
+the Applet should run 1x immedeately and after 24h again and then every day

@@ -15,7 +15,7 @@ It requires two components:
 (b) the script itself which generates the list of affected interfaces
 
 ## installation
-(1) copy the python-script to the local bootdisk:
+(1) copy the python-script to the local bootdisk: into the /scripts/-Directory
 (2) add the EEM-Commands to the running-config
 
 the Applet should run 1x immedeately and after 24h again and then every day

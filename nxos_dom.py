@@ -9,7 +9,7 @@ import re
 #
 def get_shutdown():
   result = []
-  cli_result = cli('show int status | inc disabled | cut -d " " -f 1')
+  cli_result = cli('show int | egrep ignore-case ^Ethernet.*admin.*down | cut -d " " -f 1 | sed "s/Ethernet/Eth/g"')
   #
   for l in cli_result.split("\n"):
     result.append(l)

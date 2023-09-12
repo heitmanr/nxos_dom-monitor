@@ -50,7 +50,7 @@ def get_dom_alarm(shutdown):
       int_flags[lm.groups()[0]] = lm.groups()[1]
   #
   kvs = ";".join('{}:{}'.format(k,",".join(v)) for k,v in result.items())
-  
+  #
   return kvs
 #
 #
@@ -59,4 +59,4 @@ dom_alarm = get_dom_alarm(down)
 #
 # rx_pwr--:Eth1/16,Eth1/22,Eth1/23,Eth1/26,Eth1/34,Eth1/35,Eth2/19
 #
-print dom_alarm,
+print "DOM",dom_alarm,

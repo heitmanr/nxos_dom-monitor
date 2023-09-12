@@ -3,6 +3,7 @@
 # nxos_dom.py
 #
 import re
+from cli import *
 #
 # return a list of interfaces, which are shutdown
 # => their SFP/DOM-Measurements are irrelevant
